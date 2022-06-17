@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.emf.henshin</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.7.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>plugins/org.eclipse.emf.henshin.diagram</module>
+		<module>plugins/org.eclipse.emf.henshin.edit</module>
+		<module>plugins/org.eclipse.emf.henshin.editor</module>
+		<module>plugins/org.eclipse.emf.henshin.examples</module>
+		<module>plugins/org.eclipse.emf.henshin.giraph</module>
+		<module>plugins/org.eclipse.emf.henshin.interpreter</module>
+		<module>plugins/org.eclipse.emf.henshin.interpreter.ui</module>
+		<module>plugins/org.eclipse.emf.henshin.model</module>
+		<module>plugins/org.eclipse.emf.henshin.statespace</module>
+		<module>plugins/org.eclipse.emf.henshin.statespace.explorer</module>
+		<module>plugins/org.eclipse.emf.henshin.statespace.external</module>
+		<module>plugins/org.eclipse.emf.henshin.multicda.cda</module>
+		<module>plugins/org.eclipse.emf.henshin.multicda.cpa</module>
+		<module>plugins/org.eclipse.emf.henshin.multicda.cpa.ui</module>
+		<module>plugins/org.eclipse.emf.henshin.rulegen</module>
+		<module>plugins/org.eclipse.emf.henshin.rulegen.tests</module>
+		<module>plugins/org.eclipse.emf.henshin.rulegen.ui</module>
+		<module>plugins/org.eclipse.emf.henshin.trace</module>
+		<module>plugins/org.eclipse.emf.henshin.wrap</module>
+		<module>plugins/org.eclipse.emf.henshin.tests</module>
+		<module>plugins/org.eclipse.emf.henshin.text</module>
+		<module>plugins/org.eclipse.emf.henshin.text.ide</module>
+		<module>plugins/org.eclipse.emf.henshin.text.transformation</module>
+		<module>plugins/org.eclipse.emf.henshin.text.ui</module>
+		<module>plugins/org.eclipse.emf.henshin.monitoring.kieker</module>
+		<module>plugins/org.eclipse.emf.henshin.monitoring.ui</module>
+		<module>plugins/adapters/org.eclipse.emf.henshin.adapters.xtext</module>
+		<module>plugins/variability/org.eclipse.emf.henshin.variability</module>
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.configuration</module>
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.configuration.ui</module>
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.mergein</module>	
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.mergein.refactoring</module>
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.mergein.ui</module>	
+		<module>plugins/variability/org.eclipse.emf.henshin.variability.test</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.gc2ac</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.model</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.model.edit</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.model.editor</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.ocl2gc</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.tool</module>
+		<module>plugins/ocl2ac/org.eclipse.emf.henshin.ocl2ac.utils</module>
+		<module>features/org.eclipse.emf.henshin.sdk</module>
+		<module>features/org.eclipse.emf.henshin.sdk.variability</module>
+		<module>features/org.eclipse.emf.henshin.sdk.ocl2ac</module>
+		<module>releng/org.eclipse.emf.henshin.target</module>
+		<module>p2updatesite</module>
+	</modules>
+
+	<properties>
+		<tycho-version>1.0.0</tycho-version>
+		<tycho-extras-version>1.0.0</tycho-extras-version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>org.eclipse.emf.henshin</groupId>
+							<artifactId>org.eclipse.emf.henshin.target</artifactId>
+							<version>1.7.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+
+					<environments>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <compilerVersion>1.14</compilerVersion>
+        </configuration>
+      </plugin>
+		</plugins>
+	</build>
+    <dependencies>
+  	<dependency>
+  	    <groupId>org.apache.commons</groupId>
+  	    <artifactId>commons-lang3</artifactId>
+  	    <version>3.12.0</version>
+  	</dependency>
+    </dependencies>
+
+    <distributionManagement>
+    <repository>
+      <id>repo.eclipse.org</id>
+      <name>Project Repository - Releases</name>
+      <url>https://repo.eclipse.org/content/repositories/henshin-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>repo.eclipse.org</id>
+      <name>Project Repository - Snapshots</name>
+      <url>https://repo.eclipse.org/content/repositories/henshin-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>

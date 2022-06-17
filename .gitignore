@@ -1,0 +1,14 @@
+*.class
+*.xtendbin
+*._trace
+.settings/
+bin/
+target/
+/.metadata/
+/plugins/org.eclipse.emf.henshin.text/src-gen/
+/plugins/org.eclipse.emf.henshin.text/xtend-gen/
+/plugins/org.eclipse.emf.henshin.text.tests/src-gen/
+/plugins/org.eclipse.emf.henshin.text.tests/xtend-gen/
+/plugins/org.eclipse.emf.henshin.text.ui/src-gen/
+/plugins/org.eclipse.emf.henshin.text.ui/xtend-gen/
+.DS_Store

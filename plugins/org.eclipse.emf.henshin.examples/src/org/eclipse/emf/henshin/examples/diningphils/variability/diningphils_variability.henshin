@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_X-n8gD1UEey9dtHTqFMsRA" name="">
+  <imports href="diningphils.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_FooN4D1aEey9dtHTqFMsRA" name="eating">
+    <annotations xmi:id="_FqgdMD1aEey9dtHTqFMsRA" key="featureModel" value=""/>
+    <annotations xmi:id="_FqgdMT1aEey9dtHTqFMsRA" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_FqhEQD1aEey9dtHTqFMsRA" key="features" value=""/>
+    <lhs xmi:id="_FpDEoD1aEey9dtHTqFMsRA" name="Lhs">
+      <nodes xmi:id="_LBwOsD1aEey9dtHTqFMsRA" outgoing="_fI5jID1aEey9dtHTqFMsRA _f3GF4D1aEey9dtHTqFMsRA _pAMYYD1aEey9dtHTqFMsRA _pj6wgD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_LBw1wj1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_cs0ekEhYEeyTq4GYibWjvw" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_b8ji8D1aEey9dtHTqFMsRA" incoming="_fI5jID1aEey9dtHTqFMsRA _pj6wgD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_b8w-UD1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_dX6GoD1aEey9dtHTqFMsRA" incoming="_f3GF4D1aEey9dtHTqFMsRA _pAMYYD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_dYCCcD1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_fI5jID1aEey9dtHTqFMsRA" source="_LBwOsD1aEey9dtHTqFMsRA" target="_b8ji8D1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_fI90kD1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_f3GF4D1aEey9dtHTqFMsRA" source="_LBwOsD1aEey9dtHTqFMsRA" target="_dX6GoD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_f3JJMD1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_pAMYYD1aEey9dtHTqFMsRA" source="_LBwOsD1aEey9dtHTqFMsRA" target="_dX6GoD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_pAQCwD1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_pj6wgD1aEey9dtHTqFMsRA" source="_LBwOsD1aEey9dtHTqFMsRA" target="_b8ji8D1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_pj-a4D1aEey9dtHTqFMsRA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_FpDEoT1aEey9dtHTqFMsRA" name="Rhs">
+      <nodes xmi:id="_LBwOsT1aEey9dtHTqFMsRA" outgoing="_fI7_YD1aEey9dtHTqFMsRA _f3H7ED1aEey9dtHTqFMsRA _pAO0oD1aEey9dtHTqFMsRA _pj9MwD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJTED1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_cs5XEEhYEeyTq4GYibWjvw" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_b8qQoD1aEey9dtHTqFMsRA" incoming="_fI7_YD1aEey9dtHTqFMsRA _pj9MwD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJTEj1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_dX9xAD1aEey9dtHTqFMsRA" incoming="_f3H7ED1aEey9dtHTqFMsRA _pAO0oD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJ6ID1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_fI7_YD1aEey9dtHTqFMsRA" source="_LBwOsT1aEey9dtHTqFMsRA" target="_b8qQoD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJ6IT1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_f3H7ED1aEey9dtHTqFMsRA" source="_LBwOsT1aEey9dtHTqFMsRA" target="_dX9xAD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJ6Ij1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_pAO0oD1aEey9dtHTqFMsRA" source="_LBwOsT1aEey9dtHTqFMsRA" target="_dX9xAD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJ6Iz1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_pj9MwD1aEey9dtHTqFMsRA" source="_LBwOsT1aEey9dtHTqFMsRA" target="_b8qQoD1aEey9dtHTqFMsRA">
+        <annotations xmi:id="_8MJ6JD1eEey6q8XGnPNAig" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_LBwOsj1aEey9dtHTqFMsRA" origin="_LBwOsD1aEey9dtHTqFMsRA" image="_LBwOsT1aEey9dtHTqFMsRA"/>
+    <mappings xmi:id="_b8q3sD1aEey9dtHTqFMsRA" origin="_b8ji8D1aEey9dtHTqFMsRA" image="_b8qQoD1aEey9dtHTqFMsRA"/>
+    <mappings xmi:id="_dX9xAT1aEey9dtHTqFMsRA" origin="_dX6GoD1aEey9dtHTqFMsRA" image="_dX9xAD1aEey9dtHTqFMsRA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_jFG5gEhcEeyTq4GYibWjvw" name="hungry">
+    <lhs xmi:id="_jFTt0EhcEeyTq4GYibWjvw" name="Lhs">
+      <nodes xmi:id="_kmInYEhcEeyTq4GYibWjvw" name="">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_lYZKwEhcEeyTq4GYibWjvw" value="thinking">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_jFU78EhcEeyTq4GYibWjvw" name="Rhs">
+      <nodes xmi:id="_kmInYUhcEeyTq4GYibWjvw" name="">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_lYZx0EhcEeyTq4GYibWjvw" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_kmInYkhcEeyTq4GYibWjvw" origin="_kmInYEhcEeyTq4GYibWjvw" image="_kmInYUhcEeyTq4GYibWjvw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_75TWcEhdEeyTq4GYibWjvw" name="release">
+    <lhs xmi:id="_75dHcEhdEeyTq4GYibWjvw" name="Lhs">
+      <nodes xmi:id="_-lfP4EhdEeyTq4GYibWjvw" outgoing="_LnkmIEheEeyTq4GYibWjvw _cy-iMEheEeyTq4GYibWjvw _oB3cgEheEeyTq4GYibWjvw _oznCgEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="__frnQEhdEeyTq4GYibWjvw" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_F5mWsEheEeyTq4GYibWjvw" incoming="_LnkmIEheEeyTq4GYibWjvw _cy-iMEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_GvyX0EheEeyTq4GYibWjvw" incoming="_oB3cgEheEeyTq4GYibWjvw _oznCgEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_LnkmIEheEeyTq4GYibWjvw" source="_-lfP4EhdEeyTq4GYibWjvw" target="_F5mWsEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <edges xmi:id="_cy-iMEheEeyTq4GYibWjvw" source="_-lfP4EhdEeyTq4GYibWjvw" target="_F5mWsEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_oB3cgEheEeyTq4GYibWjvw" source="_-lfP4EhdEeyTq4GYibWjvw" target="_GvyX0EheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_oznCgEheEeyTq4GYibWjvw" source="_-lfP4EhdEeyTq4GYibWjvw" target="_GvyX0EheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_75dHcUhdEeyTq4GYibWjvw" name="Rhs">
+      <nodes xmi:id="_F5m9wEheEeyTq4GYibWjvw" incoming="_iAfv8EheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_GvyX0UheEeyTq4GYibWjvw" incoming="_oB4DkEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_iAa3cEheEeyTq4GYibWjvw" outgoing="_iAfv8EheEeyTq4GYibWjvw _oB4DkEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_iAa3cUheEeyTq4GYibWjvw" value="thinking">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_iAfv8EheEeyTq4GYibWjvw" source="_iAa3cEheEeyTq4GYibWjvw" target="_F5m9wEheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <edges xmi:id="_oB4DkEheEeyTq4GYibWjvw" source="_iAa3cEheEeyTq4GYibWjvw" target="_GvyX0UheEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_F5m9wUheEeyTq4GYibWjvw" origin="_F5mWsEheEeyTq4GYibWjvw" image="_F5m9wEheEeyTq4GYibWjvw"/>
+    <mappings xmi:id="_GvyX0kheEeyTq4GYibWjvw" origin="_GvyX0EheEeyTq4GYibWjvw" image="_GvyX0UheEeyTq4GYibWjvw"/>
+    <mappings xmi:id="_iAeh0EheEeyTq4GYibWjvw" origin="_-lfP4EhdEeyTq4GYibWjvw" image="_iAa3cEheEeyTq4GYibWjvw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_NhPfgEhIEeyTq4GYibWjvw" name="reach_Hungry">
+    <lhs xmi:id="_NiI3YEhIEeyTq4GYibWjvw" name="Lhs">
+      <nodes xmi:id="_RAE94EhIEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_UgFg8EhIEeyTq4GYibWjvw" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_NiJecEhIEeyTq4GYibWjvw" name="Rhs">
+      <nodes xmi:id="_RAJ2YEhIEeyTq4GYibWjvw">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_UgMOoEhIEeyTq4GYibWjvw" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_RALrkEhIEeyTq4GYibWjvw" origin="_RAE94EhIEeyTq4GYibWjvw" image="_RAJ2YEhIEeyTq4GYibWjvw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_DuLAsGPYEey40cpRLK5PHQ" name="reach_eating">
+    <lhs xmi:id="_DufJwGPYEey40cpRLK5PHQ" name="Lhs">
+      <nodes xmi:id="_EM6yMGPYEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_FmoXIGPYEey40cpRLK5PHQ" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_DufJwWPYEey40cpRLK5PHQ" name="Rhs">
+      <nodes xmi:id="_EM6yMWPYEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_Fmo-MGPYEey40cpRLK5PHQ" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_EM6yMmPYEey40cpRLK5PHQ" origin="_EM6yMGPYEey40cpRLK5PHQ" image="_EM6yMWPYEey40cpRLK5PHQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_sVAFYGPYEey40cpRLK5PHQ" name="left">
+    <annotations xmi:id="_uigewGPYEey40cpRLK5PHQ" key="featureModel" value=""/>
+    <annotations xmi:id="_uigewWPYEey40cpRLK5PHQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_uigewmPYEey40cpRLK5PHQ" key="features" value="f_left"/>
+    <lhs xmi:id="_sVHaIGPYEey40cpRLK5PHQ" name="Lhs">
+      <nodes xmi:id="_PKmLQGPZEey40cpRLK5PHQ" incoming="_cG3NYGPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_QMY_cGPZEey40cpRLK5PHQ" outgoing="_cG3NYGPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_RdQKYGPZEey40cpRLK5PHQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_cG3NYGPZEey40cpRLK5PHQ" source="_QMY_cGPZEey40cpRLK5PHQ" target="_PKmLQGPZEey40cpRLK5PHQ">
+        <annotations xmi:id="_nDdoYGPaEey40cpRLK5PHQ" key="presenceCondition" value="f_left"/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_hIbCwGPZEey40cpRLK5PHQ">
+        <left xsi:type="henshin:Not" xmi:id="_XVzSIWPZEey40cpRLK5PHQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_XVzSImPZEey40cpRLK5PHQ">
+            <conclusion xmi:id="_XVzSI2PZEey40cpRLK5PHQ" name="1">
+              <nodes xmi:id="_XVzSJGPZEey40cpRLK5PHQ" outgoing="_TevhAGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_XVzSJWPZEey40cpRLK5PHQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_XVzSJ2PZEey40cpRLK5PHQ" incoming="_TevhAGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <edges xmi:id="_TevhAGPZEey40cpRLK5PHQ" source="_XVzSJGPZEey40cpRLK5PHQ" target="_XVzSJ2PZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_XVzSJmPZEey40cpRLK5PHQ" origin="_QMY_cGPZEey40cpRLK5PHQ" image="_XVzSJGPZEey40cpRLK5PHQ"/>
+            <mappings xmi:id="_XVzSKGPZEey40cpRLK5PHQ" origin="_PKmLQGPZEey40cpRLK5PHQ" image="_XVzSJ2PZEey40cpRLK5PHQ"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_hIbCwWPZEey40cpRLK5PHQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_hIbCwmPZEey40cpRLK5PHQ">
+            <conclusion xmi:id="_hIbCw2PZEey40cpRLK5PHQ" name="2">
+              <nodes xmi:id="_hIbCxGPZEey40cpRLK5PHQ" incoming="_hIbp02PZEey40cpRLK5PHQ _ijpqoGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <nodes xmi:id="_hIbp0GPZEey40cpRLK5PHQ" outgoing="_hIbp02PZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_hIbp0WPZEey40cpRLK5PHQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_gH1IcGPZEey40cpRLK5PHQ" outgoing="_ijpqoGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+              </nodes>
+              <edges xmi:id="_hIbp02PZEey40cpRLK5PHQ" source="_hIbp0GPZEey40cpRLK5PHQ" target="_hIbCxGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/left"/>
+              </edges>
+              <edges xmi:id="_ijpqoGPZEey40cpRLK5PHQ" source="_gH1IcGPZEey40cpRLK5PHQ" target="_hIbCxGPZEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_hIbCxWPZEey40cpRLK5PHQ" origin="_PKmLQGPZEey40cpRLK5PHQ" image="_hIbCxGPZEey40cpRLK5PHQ"/>
+            <mappings xmi:id="_hIbp0mPZEey40cpRLK5PHQ" origin="_QMY_cGPZEey40cpRLK5PHQ" image="_hIbp0GPZEey40cpRLK5PHQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_sVHaIWPYEey40cpRLK5PHQ" name="Rhs">
+      <nodes xmi:id="_PKnZYGPZEey40cpRLK5PHQ" incoming="_YpwNUGPZEey40cpRLK5PHQ _cG3NYWPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_QMY_cWPZEey40cpRLK5PHQ" outgoing="_YpwNUGPZEey40cpRLK5PHQ _cG3NYWPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_RdQKYWPZEey40cpRLK5PHQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_YpwNUGPZEey40cpRLK5PHQ" source="_QMY_cWPZEey40cpRLK5PHQ" target="_PKnZYGPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_cG3NYWPZEey40cpRLK5PHQ" source="_QMY_cWPZEey40cpRLK5PHQ" target="_PKnZYGPZEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_PKnZYWPZEey40cpRLK5PHQ" origin="_PKmLQGPZEey40cpRLK5PHQ" image="_PKnZYGPZEey40cpRLK5PHQ"/>
+    <mappings xmi:id="_QMY_cmPZEey40cpRLK5PHQ" origin="_QMY_cGPZEey40cpRLK5PHQ" image="_QMY_cWPZEey40cpRLK5PHQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_5KfxIGPYEey40cpRLK5PHQ" name="right">
+    <annotations xmi:id="_6V0UwGPYEey40cpRLK5PHQ" key="featureModel" value=""/>
+    <annotations xmi:id="_6V0UwWPYEey40cpRLK5PHQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <annotations xmi:id="_6V0UwmPYEey40cpRLK5PHQ" key="features" value="f_right"/>
+    <lhs xmi:id="_5KnF4GPYEey40cpRLK5PHQ" name="Lhs">
+      <nodes xmi:id="__ClJYGPZEey40cpRLK5PHQ" outgoing="_FmQRwGPaEey40cpRLK5PHQ _JJE4QGPaEey40cpRLK5PHQ _THTb8GPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_AB7tkGPaEey40cpRLK5PHQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_EOoXgGPaEey40cpRLK5PHQ" incoming="_FmQRwGPaEey40cpRLK5PHQ _JJE4QGPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_Qtfr8GPaEey40cpRLK5PHQ" incoming="_THTb8GPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_FmQRwGPaEey40cpRLK5PHQ" source="__ClJYGPZEey40cpRLK5PHQ" target="_EOoXgGPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_JJE4QGPaEey40cpRLK5PHQ" source="__ClJYGPZEey40cpRLK5PHQ" target="_EOoXgGPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_THTb8GPaEey40cpRLK5PHQ" source="__ClJYGPZEey40cpRLK5PHQ" target="_Qtfr8GPaEey40cpRLK5PHQ">
+        <annotations xmi:id="_oZve0GPaEey40cpRLK5PHQ" key="presenceCondition" value="f_right"/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_dP740GPaEey40cpRLK5PHQ">
+        <left xsi:type="henshin:Not" xmi:id="_XPup4GPaEey40cpRLK5PHQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_XPup4WPaEey40cpRLK5PHQ">
+            <conclusion xmi:id="_XPup4mPaEey40cpRLK5PHQ" name="1">
+              <nodes xmi:id="_XPup42PaEey40cpRLK5PHQ" outgoing="_V6QEsGPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_XPup5GPaEey40cpRLK5PHQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_XPup5mPaEey40cpRLK5PHQ" incoming="_V6QEsGPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <edges xmi:id="_V6QEsGPaEey40cpRLK5PHQ" source="_XPup42PaEey40cpRLK5PHQ" target="_XPup5mPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_XPup5WPaEey40cpRLK5PHQ" origin="__ClJYGPZEey40cpRLK5PHQ" image="_XPup42PaEey40cpRLK5PHQ"/>
+            <mappings xmi:id="_XPup52PaEey40cpRLK5PHQ" origin="_Qtfr8GPaEey40cpRLK5PHQ" image="_XPup5mPaEey40cpRLK5PHQ"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_dP740WPaEey40cpRLK5PHQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_dP740mPaEey40cpRLK5PHQ">
+            <conclusion xmi:id="_dP7402PaEey40cpRLK5PHQ" name="2">
+              <nodes xmi:id="_dP741GPaEey40cpRLK5PHQ" outgoing="_dP742WPaEey40cpRLK5PHQ _dP742mPaEey40cpRLK5PHQ _dP743WPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_dP741WPaEey40cpRLK5PHQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_dP7412PaEey40cpRLK5PHQ" incoming="_dP742WPaEey40cpRLK5PHQ _dP742mPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <nodes xmi:id="_dP7422PaEey40cpRLK5PHQ" incoming="_dP743WPaEey40cpRLK5PHQ _eXO4EGPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <nodes xmi:id="_cjgQoGPaEey40cpRLK5PHQ" outgoing="_eXO4EGPaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+              </nodes>
+              <edges xmi:id="_dP742WPaEey40cpRLK5PHQ" source="_dP741GPaEey40cpRLK5PHQ" target="_dP7412PaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/left"/>
+              </edges>
+              <edges xmi:id="_dP742mPaEey40cpRLK5PHQ" source="_dP741GPaEey40cpRLK5PHQ" target="_dP7412PaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+              <edges xmi:id="_dP743WPaEey40cpRLK5PHQ" source="_dP741GPaEey40cpRLK5PHQ" target="_dP7422PaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/right"/>
+              </edges>
+              <edges xmi:id="_eXO4EGPaEey40cpRLK5PHQ" source="_cjgQoGPaEey40cpRLK5PHQ" target="_dP7422PaEey40cpRLK5PHQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_dP741mPaEey40cpRLK5PHQ" origin="__ClJYGPZEey40cpRLK5PHQ" image="_dP741GPaEey40cpRLK5PHQ"/>
+            <mappings xmi:id="_dP742GPaEey40cpRLK5PHQ" origin="_EOoXgGPaEey40cpRLK5PHQ" image="_dP7412PaEey40cpRLK5PHQ"/>
+            <mappings xmi:id="_dP743GPaEey40cpRLK5PHQ" origin="_Qtfr8GPaEey40cpRLK5PHQ" image="_dP7422PaEey40cpRLK5PHQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_5KnF4WPYEey40cpRLK5PHQ" name="Rhs">
+      <nodes xmi:id="__ClJYWPZEey40cpRLK5PHQ" outgoing="_FmQRwWPaEey40cpRLK5PHQ _JJE4QWPaEey40cpRLK5PHQ _THTb8WPaEey40cpRLK5PHQ _ZbiaIGPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_AB7tkWPaEey40cpRLK5PHQ" value="eating">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_EOoXgWPaEey40cpRLK5PHQ" incoming="_FmQRwWPaEey40cpRLK5PHQ _JJE4QWPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_Qtfr8WPaEey40cpRLK5PHQ" incoming="_THTb8WPaEey40cpRLK5PHQ _ZbiaIGPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_FmQRwWPaEey40cpRLK5PHQ" source="__ClJYWPZEey40cpRLK5PHQ" target="_EOoXgWPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_JJE4QWPaEey40cpRLK5PHQ" source="__ClJYWPZEey40cpRLK5PHQ" target="_EOoXgWPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_THTb8WPaEey40cpRLK5PHQ" source="__ClJYWPZEey40cpRLK5PHQ" target="_Qtfr8WPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <edges xmi:id="_ZbiaIGPaEey40cpRLK5PHQ" source="__ClJYWPZEey40cpRLK5PHQ" target="_Qtfr8WPaEey40cpRLK5PHQ">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="__ClJYmPZEey40cpRLK5PHQ" origin="__ClJYGPZEey40cpRLK5PHQ" image="__ClJYWPZEey40cpRLK5PHQ"/>
+    <mappings xmi:id="_EOoXgmPaEey40cpRLK5PHQ" origin="_EOoXgGPaEey40cpRLK5PHQ" image="_EOoXgWPaEey40cpRLK5PHQ"/>
+    <mappings xmi:id="_Qtfr8mPaEey40cpRLK5PHQ" origin="_Qtfr8GPaEey40cpRLK5PHQ" image="_Qtfr8WPaEey40cpRLK5PHQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Xk82kH3yEeyABo1K_4aKdg" name="reach_holdLeft">
+    <lhs xmi:id="_XlQ_oH3yEeyABo1K_4aKdg" name="Lhs">
+      <nodes xmi:id="_bB3CUH3yEeyABo1K_4aKdg" outgoing="_dVTroH3yEeyABo1K_4aKdg _eA3xIH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_cv_YEH3yEeyABo1K_4aKdg" incoming="_dVTroH3yEeyABo1K_4aKdg _eA3xIH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_dVTroH3yEeyABo1K_4aKdg" source="_bB3CUH3yEeyABo1K_4aKdg" target="_cv_YEH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_eA3xIH3yEeyABo1K_4aKdg" source="_bB3CUH3yEeyABo1K_4aKdg" target="_cv_YEH3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_XlQ_oX3yEeyABo1K_4aKdg" name="Rhs">
+      <nodes xmi:id="_bB3CUX3yEeyABo1K_4aKdg" outgoing="_dVUSsH3yEeyABo1K_4aKdg _eA3xIX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher"/>
+      </nodes>
+      <nodes xmi:id="_cv_YEX3yEeyABo1K_4aKdg" incoming="_dVUSsH3yEeyABo1K_4aKdg _eA3xIX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <edges xmi:id="_dVUSsH3yEeyABo1K_4aKdg" source="_bB3CUX3yEeyABo1K_4aKdg" target="_cv_YEX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_eA3xIX3yEeyABo1K_4aKdg" source="_bB3CUX3yEeyABo1K_4aKdg" target="_cv_YEX3yEeyABo1K_4aKdg">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_bB3CUn3yEeyABo1K_4aKdg" origin="_bB3CUH3yEeyABo1K_4aKdg" image="_bB3CUX3yEeyABo1K_4aKdg"/>
+    <mappings xmi:id="_cv_YEn3yEeyABo1K_4aKdg" origin="_cv_YEH3yEeyABo1K_4aKdg" image="_cv_YEX3yEeyABo1K_4aKdg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_CD7zgNpoEeyZx-r4SZzuMQ" name="takeFork">
+    <annotations xmi:id="_TM4RcNpoEeyZx-r4SZzuMQ" key="features" value="f_left, f_right"/>
+    <annotations xmi:id="_TM4RcdpoEeyZx-r4SZzuMQ" key="featureModel" value=""/>
+    <annotations xmi:id="_TM4RctpoEeyZx-r4SZzuMQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <lhs xmi:id="_CD7zgdpoEeyZx-r4SZzuMQ" name="Lhs">
+      <nodes xmi:id="_CD7zgtpoEeyZx-r4SZzuMQ" incoming="_CD7zhdpoEeyZx-r4SZzuMQ _J3z_gNpoEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_CD7zg9poEeyZx-r4SZzuMQ" outgoing="_CD7zhdpoEeyZx-r4SZzuMQ _J3z_gNpoEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_CD7zhNpoEeyZx-r4SZzuMQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_CD7zhdpoEeyZx-r4SZzuMQ" source="_CD7zg9poEeyZx-r4SZzuMQ" target="_CD7zgtpoEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_VmP8kNpoEeyZx-r4SZzuMQ" key="presenceCondition" value="f_left &amp; !f_right"/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_J3z_gNpoEeyZx-r4SZzuMQ" source="_CD7zg9poEeyZx-r4SZzuMQ" target="_CD7zgtpoEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_W5wy4NpoEeyZx-r4SZzuMQ" key="presenceCondition" value="f_right &amp; !f_left"/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_CD7zhtpoEeyZx-r4SZzuMQ">
+        <left xsi:type="henshin:Not" xmi:id="_CD7zh9poEeyZx-r4SZzuMQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_CD7ziNpoEeyZx-r4SZzuMQ">
+            <conclusion xmi:id="_CD7zidpoEeyZx-r4SZzuMQ" name="2">
+              <nodes xmi:id="_CD7zitpoEeyZx-r4SZzuMQ" incoming="_CD7zjtpoEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <nodes xmi:id="_CD7zi9poEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_CD7zjNpoEeyZx-r4SZzuMQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_CD7zjdpoEeyZx-r4SZzuMQ" outgoing="_CD7zjtpoEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+              </nodes>
+              <edges xmi:id="_CD7zjtpoEeyZx-r4SZzuMQ" source="_CD7zjdpoEeyZx-r4SZzuMQ" target="_CD7zitpoEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_CD7zj9poEeyZx-r4SZzuMQ" origin="_CD7zgtpoEeyZx-r4SZzuMQ" image="_CD7zitpoEeyZx-r4SZzuMQ"/>
+            <mappings xmi:id="_CD7zkNpoEeyZx-r4SZzuMQ" origin="_CD7zg9poEeyZx-r4SZzuMQ" image="_CD7zi9poEeyZx-r4SZzuMQ"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_CD7zkdpoEeyZx-r4SZzuMQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_CD7zktpoEeyZx-r4SZzuMQ">
+            <conclusion xmi:id="_CD7zk9poEeyZx-r4SZzuMQ" name="1">
+              <nodes xmi:id="_CD7zlNpoEeyZx-r4SZzuMQ" outgoing="_CD7zl9poEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Philosopher"/>
+                <attributes xmi:id="_CD7zldpoEeyZx-r4SZzuMQ" value="hungry">
+                  <type href="diningphils.ecore#//Philosopher/state"/>
+                </attributes>
+              </nodes>
+              <nodes xmi:id="_CD7zltpoEeyZx-r4SZzuMQ" incoming="_CD7zl9poEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Fork"/>
+              </nodes>
+              <edges xmi:id="_CD7zl9poEeyZx-r4SZzuMQ" source="_CD7zlNpoEeyZx-r4SZzuMQ" target="_CD7zltpoEeyZx-r4SZzuMQ">
+                <type href="diningphils.ecore#//Philosopher/holds"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_CD7zmNpoEeyZx-r4SZzuMQ" origin="_CD7zg9poEeyZx-r4SZzuMQ" image="_CD7zlNpoEeyZx-r4SZzuMQ"/>
+            <mappings xmi:id="_CD7zmdpoEeyZx-r4SZzuMQ" origin="_CD7zgtpoEeyZx-r4SZzuMQ" image="_CD7zltpoEeyZx-r4SZzuMQ"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_CD7zmtpoEeyZx-r4SZzuMQ" name="Rhs">
+      <nodes xmi:id="_CD7zm9poEeyZx-r4SZzuMQ" incoming="_CD7zntpoEeyZx-r4SZzuMQ _CD7zn9poEeyZx-r4SZzuMQ _LwCscNpoEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_CD7znNpoEeyZx-r4SZzuMQ" outgoing="_CD7zntpoEeyZx-r4SZzuMQ _CD7zn9poEeyZx-r4SZzuMQ _LwCscNpoEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_CD7zndpoEeyZx-r4SZzuMQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_CD7zntpoEeyZx-r4SZzuMQ" source="_CD7znNpoEeyZx-r4SZzuMQ" target="_CD7zm9poEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_CD7zn9poEeyZx-r4SZzuMQ" source="_CD7znNpoEeyZx-r4SZzuMQ" target="_CD7zm9poEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_LwCscNpoEeyZx-r4SZzuMQ" source="_CD7znNpoEeyZx-r4SZzuMQ" target="_CD7zm9poEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_CD7zoNpoEeyZx-r4SZzuMQ" origin="_CD7zgtpoEeyZx-r4SZzuMQ" image="_CD7zm9poEeyZx-r4SZzuMQ"/>
+    <mappings xmi:id="_CD7zodpoEeyZx-r4SZzuMQ" origin="_CD7zg9poEeyZx-r4SZzuMQ" image="_CD7znNpoEeyZx-r4SZzuMQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_IjSxsNpqEeyZx-r4SZzuMQ" name="leftright_var">
+    <annotations xmi:id="_IjSxsdpqEeyZx-r4SZzuMQ" key="features" value="f_left, f_right"/>
+    <annotations xmi:id="_IjSxstpqEeyZx-r4SZzuMQ" key="featureModel" value=""/>
+    <annotations xmi:id="_IjSxs9pqEeyZx-r4SZzuMQ" key="injectiveMatchingPresenceCondition" value=""/>
+    <lhs xmi:id="_IjSxtNpqEeyZx-r4SZzuMQ" name="Lhs">
+      <nodes xmi:id="_IjSxtdpqEeyZx-r4SZzuMQ" incoming="_IjSxuNpqEeyZx-r4SZzuMQ _IjSxutpqEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_IjSxttpqEeyZx-r4SZzuMQ" outgoing="_IjSxuNpqEeyZx-r4SZzuMQ _IjSxutpqEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_IjSxt9pqEeyZx-r4SZzuMQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_IjSxuNpqEeyZx-r4SZzuMQ" source="_IjSxttpqEeyZx-r4SZzuMQ" target="_IjSxtdpqEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_IjSxudpqEeyZx-r4SZzuMQ" key="presenceCondition" value="f_left &amp; !f_right"/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_IjSxutpqEeyZx-r4SZzuMQ" source="_IjSxttpqEeyZx-r4SZzuMQ" target="_IjSxtdpqEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_IjSxu9pqEeyZx-r4SZzuMQ" key="presenceCondition" value="f_right &amp; !f_left"/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_5AZPENpqEeyZx-r4SZzuMQ">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_5AZPEdpqEeyZx-r4SZzuMQ">
+          <conclusion xmi:id="_5AZPEtpqEeyZx-r4SZzuMQ">
+            <nodes xmi:id="_5AZPE9pqEeyZx-r4SZzuMQ" incoming="_IjSxxNpqEeyZx-r4SZzuMQ">
+              <type href="diningphils.ecore#//Fork"/>
+            </nodes>
+            <nodes xmi:id="_5AZPFdpqEeyZx-r4SZzuMQ">
+              <type href="diningphils.ecore#//Philosopher"/>
+              <attributes xmi:id="_5AZPFtpqEeyZx-r4SZzuMQ" value="hungry">
+                <type href="diningphils.ecore#//Philosopher/state"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_IjSxw9pqEeyZx-r4SZzuMQ" outgoing="_IjSxxNpqEeyZx-r4SZzuMQ">
+              <type href="diningphils.ecore#//Philosopher"/>
+            </nodes>
+            <edges xmi:id="_IjSxxNpqEeyZx-r4SZzuMQ" source="_IjSxw9pqEeyZx-r4SZzuMQ" target="_5AZPE9pqEeyZx-r4SZzuMQ">
+              <annotations xmi:id="_raK_QNqREeyczqCA_27_pA" key="presenceCondition" value=""/>
+              <type href="diningphils.ecore#//Philosopher/holds"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_5AZPFNpqEeyZx-r4SZzuMQ" origin="_IjSxtdpqEeyZx-r4SZzuMQ" image="_5AZPE9pqEeyZx-r4SZzuMQ"/>
+          <mappings xmi:id="_5AZPF9pqEeyZx-r4SZzuMQ" origin="_IjSxttpqEeyZx-r4SZzuMQ" image="_5AZPFdpqEeyZx-r4SZzuMQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_IjSx0NpqEeyZx-r4SZzuMQ" name="Rhs">
+      <nodes xmi:id="_IjSx0dpqEeyZx-r4SZzuMQ" incoming="_IjSx1NpqEeyZx-r4SZzuMQ _IjSx1dpqEeyZx-r4SZzuMQ _IjSx1tpqEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Fork"/>
+      </nodes>
+      <nodes xmi:id="_IjSx0tpqEeyZx-r4SZzuMQ" outgoing="_IjSx1NpqEeyZx-r4SZzuMQ _IjSx1dpqEeyZx-r4SZzuMQ _IjSx1tpqEeyZx-r4SZzuMQ">
+        <type href="diningphils.ecore#//Philosopher"/>
+        <attributes xmi:id="_IjSx09pqEeyZx-r4SZzuMQ" value="hungry">
+          <type href="diningphils.ecore#//Philosopher/state"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_IjSx1NpqEeyZx-r4SZzuMQ" source="_IjSx0tpqEeyZx-r4SZzuMQ" target="_IjSx0dpqEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_uLeCMNqREeyczqCA_27_pA" key="presenceCondition" value=""/>
+        <type href="diningphils.ecore#//Philosopher/holds"/>
+      </edges>
+      <edges xmi:id="_IjSx1dpqEeyZx-r4SZzuMQ" source="_IjSx0tpqEeyZx-r4SZzuMQ" target="_IjSx0dpqEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_uoTIINqREeyczqCA_27_pA" key="presenceCondition" value="f_left &amp; !f_right"/>
+        <type href="diningphils.ecore#//Philosopher/left"/>
+      </edges>
+      <edges xmi:id="_IjSx1tpqEeyZx-r4SZzuMQ" source="_IjSx0tpqEeyZx-r4SZzuMQ" target="_IjSx0dpqEeyZx-r4SZzuMQ">
+        <annotations xmi:id="_uz1CsNqREeyczqCA_27_pA" key="presenceCondition" value="f_right &amp; !f_left"/>
+        <type href="diningphils.ecore#//Philosopher/right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_IjSx19pqEeyZx-r4SZzuMQ" origin="_IjSxtdpqEeyZx-r4SZzuMQ" image="_IjSx0dpqEeyZx-r4SZzuMQ"/>
+    <mappings xmi:id="_IjSx2NpqEeyZx-r4SZzuMQ" origin="_IjSxttpqEeyZx-r4SZzuMQ" image="_IjSx0tpqEeyZx-r4SZzuMQ"/>
+  </units>
+</henshin:Module>
